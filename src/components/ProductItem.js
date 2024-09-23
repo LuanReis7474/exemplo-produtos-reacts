@@ -1,7 +1,9 @@
-export const ProductsLists = ({ title }) => {
+import { Link } from 'react-router-dom';
+
+export const ProductItem = ({ title, id }) => {
     return (
         <li>
-            {title}
+            <Link to={`/product/${id}`}>{title}</Link>
         </li>
     )
 }

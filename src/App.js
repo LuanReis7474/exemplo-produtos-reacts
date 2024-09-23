@@ -1,17 +1,29 @@
-import { useState } from 'react';
+import Home from './views/Home'
+import About from './views/About';
 import Header from './components/Header';
-import { ProductsLists } from './components/ProductItem';
-import { ProductsContainer } from './styles/ProductsContainer';
+import ProductDetailed from './views/ProductDetailed';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 function App() {
-  const [products, setProducts] = useState([]);
+
+
   return (
     <div >
-      <Header></Header>
 
-      <ProductsContainer>
-        <ProductsLists products={[]}></ProductsLists>
-      </ProductsContainer>
+      <Router>
+        <Header></Header>
+        <Routes>
+          <Route path="/about" element={<About></About>}>
+          </Route>
+          <Route path="/" element={<Home></Home>} >
+          </Route>
+          <Route path="/product/:id" element={<ProductDetailed></ProductDetailed>} >
+          </Route>
+        </Routes>
+      </Router>
+
+
+
     </div>
   );
 }

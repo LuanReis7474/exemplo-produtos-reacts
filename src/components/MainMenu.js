@@ -1,13 +1,14 @@
 import { MainMenuContainer } from "../styles/MainMenuContainer"
+import { Link } from 'react-router-dom';
+
 export const MainMenu = () => {
     return (
         <MainMenuContainer>
             <nav>
 
                 <ul>
-                    <li>Home</li>
-                    <li>Produtos</li>
-                    <li>Sobre nós</li>
+                    <li><Link to='/'>Home</Link></li>
+                    <li><Link to='/about'>Sobre nós</Link></li>
                 </ul>
 
             </nav>

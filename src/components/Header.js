@@ -5,7 +5,7 @@ const Header = () => {
         <div className="header">
             <HeaderContainer>
 
-                <h1>Site de Produtos</h1>
+                <h1>Site</h1>
 
                 <MainMenu></MainMenu>
 
