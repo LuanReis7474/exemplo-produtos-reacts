@@ -5,12 +5,11 @@ export const MainMenu = () => {
     return (
         <MainMenuContainer>
             <nav>
-
                 <ul>
                     <li><Link to='/'>Home</Link></li>
                     <li><Link to='/about'>Sobre nós</Link></li>
+                    <li><Link to='/products-liked'>Produtos Curtidos</Link></li>
                 </ul>
-
             </nav>
         </MainMenuContainer>
     )
